@@ -35,3 +35,4 @@ yarn-error.log*
 
 #my additions
 .history
+/README.md
