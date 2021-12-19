@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Retro';
+  font-style: normal;
+  src: url('../public/fonts/retro-font.ttf') format('truetype');
+};
+
 html,
 body {
   padding: 0;
