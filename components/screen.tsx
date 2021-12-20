@@ -1,16 +1,28 @@
-interface ParentProps {
-    Desktop:React.ComponentType;
-    Taskbar: React.ComponentType;
-}
+import { useState } from 'react'; 
+import Desktop from '../components/desktop/desktop'
+import Taskbar from '../components/taskbar/taskbar'
 
-export default function Screen(props:ParentProps) {
-    return (
-      <div className="flex flex-col h-screen">
+
+export default function Screen() {
+  const [aboutMe, setAboutMe] = useState(false);
+
+  function aboutMeClicked () {
+    setAboutMe(!aboutMe);
+  }
+
+  return (
+      <div
+      className="flex flex-col h-screen"
+      style={{backgroundImage: 'url(images/desktop-image.png)'}}
+      >
         <main className="flex-auto">
-            <props.Desktop/>
+            <Desktop/>
         </main>
         <footer>
-            <props.Taskbar/>
+            <Taskbar
+            aboutMeClicked={aboutMeClicked}
+            aboutMe={aboutMe}
+          />
         </footer>
       </div>
     )

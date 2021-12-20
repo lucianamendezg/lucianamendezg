@@ -11,17 +11,17 @@ interface ParentProps {
 
 export default function Icon(props:ParentProps) {
     return (
-        <div className="block text-center m-6">
-        <Link href={props.hyperlink}>
-        <a>
-        <Image
-            src={props.src}
-            width={props.height}
-            height={props.height}
-        />
-        <h1 className="p-3 text-white font-retro hover:text-red-800">{props.title}</h1>
-        </a>
-        </Link>
+        <div className="block text-center m-4">
+            <Link href={props.hyperlink}>
+                <a className="hover:opacity-75">
+                    <Image
+                        src={props.src}
+                        width={props.height}
+                        height={props.height}
+                    />
+                <h1 className="text-black text-xl font-retro"><span className="bg-gray-100 bg-opacity-75 p-1">{props.title}</span></h1>
+                </a>
+            </Link>
     </div>
     )
 }

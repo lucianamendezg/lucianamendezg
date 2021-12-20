@@ -5,6 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -17,6 +18,8 @@
     "autoprefixer": "^10.4.0",
     "eslint": "8.5.0",
     "eslint-config-next": "12.0.7",
+    "gh-pages": "^3.2.3",
+    "github-pages": "^3.0.2",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.7"
   }

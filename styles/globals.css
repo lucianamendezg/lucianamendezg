@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'Retro';
   font-style: normal;
-  src: url('../public/fonts/retro-font.ttf') format('truetype');
+  src: url('../public/fonts/retro-font.woff') format('woff');
 };
 
 html,
