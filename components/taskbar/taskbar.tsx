@@ -14,7 +14,7 @@ export default function Taskbar(props:ScreenProps) {
         <div className="flex bg-gray-400 py-1 px-2 border-2 border-white justify-between">
             <AboutMeButton
               aboutMe={props.aboutMe}
-              aboutMeClicked={props.aboutMeClicked}/>
+              aboutMeClicked={props.aboutMeClicked} />
             <Clock/>
         </div>
       </>
